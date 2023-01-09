@@ -23,10 +23,11 @@ const About = () => {
           <hr />
         </div>
         <div ref={myRef} className="about_content">
-          <img />
+          <img src="../img/pfp.jpg" alt="Justins profile" />
           <div className="about_me">
             <p>Justin Suh</p>
             <hr />
+
             <p>
               Web developer with a Bachelor’s in Cyber Security from Drexel
               University and a recent Fullstack Academy graduate. I fell in love
@@ -38,13 +39,16 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div>
-          <p>Soft Skills</p>
-          <div>
-            {/* <img />
-          <img />
-          <img />
-          <img /> */}
+        <div className="soft_skills_header">
+          <p>SOFT SKILLS</p>
+          <hr />
+        </div>
+        <div className="about_soft_skills">
+          <div className="about_badges">
+            <img src="../img/teamwork.png" alt="Team Player Badge" />
+            <img src="../img/adaptable.png" alt="Adaptable Badge" />
+            <img src="../img/communication.png" alt="Communicative Badge" />
+            <img src="../img/solver.png" alt="Problem Solver Badge" />
           </div>
         </div>
       </div>

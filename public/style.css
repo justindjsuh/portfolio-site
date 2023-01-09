@@ -113,9 +113,19 @@ a {
   width: 15%;
 }
 
+/* 
+*
+* ABOUT SECTION
+*
+*/
+
 .about_container {
   /* background-color: var(--OFFWHITE); */
+  color: var(--BGCOLOR);
+  display: flex;
+  flex-flow: column;
   min-height: 100vh;
+  align-items: center;
 }
 
 .about_container p {
@@ -125,6 +135,49 @@ a {
 .about_header p {
   font-size: 36px;
 }
+
+.about_header hr {
+  border: 1px solid var(--ACCENT);
+  margin: 0;
+}
+
+.about_content {
+  display: flex;
+  justify-content: center;
+}
+
+.about_me {
+  width: 50%;
+}
+
+.soft_skills_header {
+  text-align: center;
+  font-size: 36px;
+}
+
+.soft_skills_header hr {
+  border: 1px solid var(--ACCENT);
+  margin: 0;
+}
+
+.about_badges {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.about_badges img {
+  /* flex: 0 0 25%; */
+
+  /* width: 100%; */
+  /* height: auto; */
+}
+
+/* 
+*
+* STICKY HEADER
+*
+*/
 
 .sticky_header {
   position: sticky;
