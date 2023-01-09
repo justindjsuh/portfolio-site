@@ -4,3 +4,155 @@
   box-sizing: border-box;
   border: none;
 }
+
+html,
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+}
+
+:root {
+  --BGCOLOR: #0d1226;
+  --ACCENT: #88e6d0;
+  --OFFWHITE: #e7e7e7;
+}
+
+.container {
+  background-color: var(--BGCOLOR);
+  min-height: 100vh;
+}
+
+.main_container {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  height: 130px;
+}
+
+.nav_btns {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav_btn {
+  color: var(--OFFWHITE);
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--ACCENT);
+}
+
+.landing_container {
+  justify-self: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  gap: 15rem;
+}
+
+.landing_text {
+  width: 50%;
+}
+
+.landing_text hr {
+  border: 1px solid var(--ACCENT);
+  width: 50%;
+  margin: 0;
+}
+
+.landing_text p {
+  color: var(--OFFWHITE);
+}
+
+.desc_header {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.landing_desc {
+  margin: 0;
+  width: 80%;
+}
+
+.landing_name {
+  color: var(--ACCENT);
+}
+
+.ending_text {
+  font-weight: 600;
+}
+
+.landing_btn {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 1rem;
+  border: none;
+  background-color: var(--ACCENT);
+  padding: 0.5rem 1rem;
+  color: var(--BGCOLOR);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+#Layer_1 {
+  width: 15%;
+}
+
+.about_container {
+  /* background-color: var(--OFFWHITE); */
+  min-height: 100vh;
+}
+
+.about_container p {
+  margin: 0;
+}
+
+.about_header p {
+  font-size: 36px;
+}
+
+.sticky_header {
+  position: sticky;
+  top: 0;
+}
+
+.sticky_nav_btns {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  background-color: var(--BGCOLOR);
+  justify-content: center;
+  padding: 1rem;
+  border-top: 2px solid var(--ACCENT);
+  border-bottom: 2px solid var(--ACCENT);
+}
+
+.sticky_nav_btn {
+  color: var(--OFFWHITE);
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.sticky_nav_btn:hover {
+  color: var(--ACCENT);
+}
+
+.active {
+  color: var(--ACCENT);
+}
