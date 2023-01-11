@@ -23,7 +23,7 @@ const Landing = () => {
       >
         <polygon
           className="cls-2"
-          style={{ fill: '#88e6d0' }}
+          style={{ fill: "#88e6d0" }}
           points="200.03 563 0 422.47 0 141.4 200.03 0 200.03 563"
         />
       </svg>

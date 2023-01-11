@@ -3,16 +3,26 @@ const StickyHeader = (props) => {
     <div className="sticky_header">
       <div className="sticky_nav_btns">
         <a
-          className={`sticky_nav_btn ${props.isVisible ? 'active' : ''}`}
+          className={`sticky_nav_btn ${props.aboutIsVisible ? "active" : ""}`}
           href="#about"
         >
           About
         </a>
-        <a href="#" className="sticky_nav_btn">
-          Projects
+        <a
+          className={`sticky_nav_btn ${
+            props.experienceIsVisible ? "active" : ""
+          }`}
+          href="#experience"
+        >
+          Experience
         </a>
-        <a href="#" className="sticky_nav_btn">
-          Contact
+        <a
+          className={`sticky_nav_btn ${
+            props.projectsIsVisible ? "active" : ""
+          }`}
+          href="#projects"
+        >
+          Projects
         </a>
       </div>
     </div>

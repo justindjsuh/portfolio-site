@@ -1,7 +1,7 @@
-import Footer from './Footer';
-import Header from './Header';
-import Landing from './Landing';
-import About from './About';
+import Footer from "./Footer";
+import Header from "./Header";
+import Landing from "./Landing";
+import Sections from "./Sections";
 
 const Layout = () => {
   return (
@@ -12,7 +12,8 @@ const Layout = () => {
           <Landing />
         </div>
       </div>
-      <About />
+      <span id="about"></span>
+      <Sections />
       <Footer />
     </>
   );
