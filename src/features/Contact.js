@@ -1,11 +1,22 @@
 const Contact = () => {
   return (
     <div className="contact_container">
-      <div className="contact_header" id="contact">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        className="contact_header"
+        id="contact"
+      >
         <p>Contact Me</p>
         <hr />
       </div>
-      <div className="contact_desc">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="400"
+        className="contact_desc"
+      >
         <p>
           If you’ve gotten to the end, thanks for taking the time to stick
           around! I sincerely appreciate it. I’m always looking for

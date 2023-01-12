@@ -16,11 +16,21 @@ const Projects = (props) => {
 
   return (
     <div className="project_container">
-      <div className="project_header">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="200"
+        className="project_header"
+      >
         <p>PROJECTS</p>
         <hr />
       </div>
-      <div className="project_list">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-delay="400"
+        className="project_list"
+      >
         <div className="project_item alibi_esports">
           <img
             src="../img/alibiesport_project.png"
@@ -31,10 +41,12 @@ const Projects = (props) => {
               Alibi Esports Website | Fullstack Software Developer
             </p>
             <hr />
-            <p>
-              Built a full-stack website for an e-sports organization that seeks
-              to provide competitive outlets for gaming communities that don’t
-              have the opportunity to participate in competitive events.
+            <p className="project_description">
+              Designed and implemented the website from scratch, incorporating
+              UX/UI, form handling, RESTful API, and database development to
+              create an interactive and dynamic environment that handled
+              communication and tournament registration while streamlining the
+              user experience.
             </p>
             <div className="technology_stack">
               <p>JavaScript</p>
@@ -43,8 +55,22 @@ const Projects = (props) => {
               <p>Node.js</p>
               <p>PostgreSQL</p>
             </div>
-            <button className="project_btn">Website</button>
-            <button className="project_btn">Github</button>
+            <a
+              className="project_btn"
+              href="https://alibi-esports.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Website
+            </a>
+            <a
+              className="project_btn"
+              href="https://github.com/justindjsuh/alibi-esports-fe"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
           </div>
         </div>
       </div>

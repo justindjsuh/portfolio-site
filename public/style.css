@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
+  /* overflow: overlay; */
 }
 
 a {
@@ -48,11 +49,35 @@ a {
   gap: 36px;
 }
 
+.navbar img {
+  width: 50%;
+  height: auto;
+}
+
 .nav_btn {
+  position: relative;
   color: var(--OFFWHITE);
-  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
   text-transform: uppercase;
-  border-bottom: 2px solid var(--ACCENT);
+}
+
+.nav_btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--ACCENT);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav_btn:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .landing_container {
@@ -65,13 +90,28 @@ a {
 }
 
 .landing_text {
-  width: 50%;
+  width: 60%;
 }
 
 .landing_text hr {
-  border: 1px solid var(--ACCENT);
-  width: 50%;
+  border: 1px solid transparent;
   margin: 0;
+  animation-name: lineAnimation;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lineAnimation {
+  0% {
+    width: 0%;
+    border: 1px solid var(--ACCENT);
+  }
+  100% {
+    width: 50%;
+    border: 1px solid var(--ACCENT);
+  }
 }
 
 .landing_text p {
@@ -86,7 +126,7 @@ a {
 
 .landing_desc {
   margin: 0;
-  width: 80%;
+  width: 60%;
 }
 
 .landing_name {
@@ -95,11 +135,11 @@ a {
 
 .ending_text {
   font-weight: 500;
+  margin: 0.5rem 0 1rem 0;
 }
 
 .landing_btn {
   font-family: "Raleway", sans-serif;
-  margin-top: 1rem;
   border: none;
   background-color: var(--ACCENT);
   padding: 0.5rem 1rem;
@@ -184,7 +224,7 @@ a {
 .soft_skills_header hr {
   border: 1px solid var(--ACCENT);
   margin: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .about_badges {
@@ -229,6 +269,36 @@ a {
   font-weight: 600;
 }
 
+.tech_skills_container tr {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
 .tech_divider {
   color: var(--ACCENT);
   font-weight: 700;
@@ -248,11 +318,13 @@ a {
   min-height: 50vh;
   align-items: center;
   justify-content: center;
+  gap: 5rem;
 }
 
 .experience_header {
   font-size: 36px;
   font-weight: 600;
+  position: relative;
 }
 
 .experience_header p {
@@ -262,13 +334,13 @@ a {
 .experience_header hr {
   border: 1px solid var(--ACCENT);
   margin: 0;
-  margin-bottom: 4rem;
 }
 
 .experience_content {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .experience_content p {
@@ -293,9 +365,14 @@ a {
 }
 
 .company_desc {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   border-left: 3px solid var(--ACCENT);
   padding-left: 1rem;
   width: 40%;
+  animation: fadeIn 0.5s ease-in-out;
+  height: 265px;
 }
 
 .company_header {
@@ -318,8 +395,14 @@ a {
 .technology_stack p {
   margin: 0;
   margin-top: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--ACCENT);
   font-weight: 500;
+}
+
+.company_list .exp_active {
+  color: var(--ACCENT);
+  transition: all 0.5s linear;
 }
 
 /* 
@@ -378,6 +461,10 @@ a {
   margin-top: 0.5rem;
 }
 
+.project_description {
+  margin-bottom: 0.2rem;
+}
+
 .project_btn {
   font-family: "Raleway", sans-serif;
   margin: 1rem 1rem 0 0;
@@ -418,7 +505,6 @@ a {
 .contact_header hr {
   border: 1px solid var(--ACCENT);
   margin: 0;
-  margin-bottom: 1rem;
 }
 
 .contact_desc {
@@ -441,6 +527,7 @@ a {
 .sticky_header {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .sticky_nav_btns {
@@ -496,9 +583,14 @@ a {
   height: 130px;
 }
 
-.footer_box img {
-  width: 20%;
+.signature_img {
   height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.signature_img img {
+  width: 50%;
 }
 
 .footer_link_container a {
@@ -509,4 +601,180 @@ a {
   margin: 0 2rem;
   font-size: 18px;
   font-weight: 500;
+}
+
+/* 
+*
+* ARROW ANIMATION
+*
+*/
+
+.scroll_div {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+}
+
+@keyframes occasional-arrow-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  79% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+.scroll_div a:after {
+  color: var(--ACCENT);
+  content: "\02193";
+  font-size: 40px;
+  position: absolute;
+  margin-top: 35px;
+  left: 50%;
+  margin-left: -10px;
+  animation: occasional-arrow-bounce 3s infinite 2s alternate ease-out;
+}
+
+.circle {
+  height: 124px;
+  width: 124px;
+}
+
+.background {
+  fill: transparent;
+  stroke: rgba(136, 230, 208, 0.4);
+  transition: all 200ms ease;
+}
+
+.foreground {
+  fill: transparent;
+  stroke-dasharray: 377;
+  stroke-dashoffset: 377;
+  stroke: var(--ACCENT);
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+  transition: all 800ms ease;
+}
+
+.scroll_div a:hover .foreground {
+  stroke-dashoffset: 0;
+  transform: rotate(90deg);
+}
+
+@keyframes arrow-bounce {
+  0% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+.scroll_div a:after {
+  animation: arrow-bounce 0.5s infinite alternate ease-out;
+}
+
+.scroll_div a:hover:after {
+  animation: arrow-bounce 0.5s infinite alternate ease-out;
+}
+
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.to_top_btn {
+  background-color: #88e6d0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  animation: 0.3s ease-in-out fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.loading_page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--BGCOLOR);
+  z-index: 2;
+  animation: 3s ease-in-out fadeOut;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.loading_page p {
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.loading_name {
+  color: var(--ACCENT);
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+
+.loading_title {
+  color: var(--OFFWHITE);
+  opacity: 0%;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInLoading {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    color: var(--ACCENT);
+  }
 }
