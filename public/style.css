@@ -829,7 +829,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .loading_page p {
-  font-size: 60px;
+  font-size: 40px;
   letter-spacing: 1px;
   font-weight: 400;
 }
