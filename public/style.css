@@ -267,11 +267,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 60%;
 }
 
 .about_me {
   margin-left: 1.5rem;
+  width: 60%;
 }
 
 .about_me p:first-child {
@@ -280,7 +281,7 @@ a {
 }
 
 .about_me p {
-  font-size: 20px;
+  font-size: 16px;
   margin: 0.3rem 0;
 }
 
@@ -293,10 +294,6 @@ a {
   border: 1px solid var(--ACCENT);
   margin: 0;
   margin-bottom: 1rem;
-}
-
-.about_me {
-  width: 50%;
 }
 
 .soft_skills_header {
