@@ -17,7 +17,7 @@ const Footer = () => {
     <div className="footer_container">
       <div className="footer_box">
         <div className="footer_link_container">
-          <button href="#about">About</button>
+          <a href="#about">About</a>
           <button onClick={handleModalClick}>Contact</button>
         </div>
         <Link className="signature_img" to="/">

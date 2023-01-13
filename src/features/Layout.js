@@ -1,15 +1,29 @@
+import { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Landing from "./Landing";
 import Loading from "./Loading";
 import Sections from "./Sections";
+import ModalContact from "./ModalContact";
 
 const Layout = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleModalClick = () => {
+    setShowModal(true);
+  };
+
   return (
     <>
       <Loading />
       <div className="container">
-        <Header />
+        {showModal ? (
+          <ModalContact
+            setShowModal={setShowModal}
+            handleModalClick={handleModalClick}
+          />
+        ) : null}
+        <Header handleModalClick={handleModalClick} />
         <div className="main_container">
           <Landing />
         </div>

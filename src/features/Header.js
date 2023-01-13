@@ -1,14 +1,6 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import ModalContact from "./ModalContact";
 
-const Header = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleModalClick = () => {
-    setShowModal(true);
-  };
-
+const Header = (props) => {
   const handleClick = () => {
     window.location.reload(true);
   };
@@ -34,11 +26,10 @@ const Header = () => {
         </a>
       </div>
       <div className="nav_button">
-        <button className="contact_button" onClick={handleModalClick}>
-          Contact
+        <button className="btn contact_button" onClick={props.handleModalClick}>
+          CONTACT
         </button>
       </div>
-      {showModal ? <ModalContact setShowModal={setShowModal} /> : null}
     </div>
   );
 };

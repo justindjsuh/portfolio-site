@@ -22,8 +22,20 @@ const ModalContact = ({ setShowModal }) => {
             <p className="modal_email">justindjsuh@gmail.com</p>
           </div>
           <div className="modal_links">
-            <a href="https://github.com/justindjsuh">GITHUB</a>
-            <a href="https://www.linkedin.com/in/justin-suh98/">LINKEDIN</a>
+            <a
+              href="https://github.com/justindjsuh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GITHUB
+            </a>
+            <a
+              href="https://www.linkedin.com/in/justin-suh98/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LINKEDIN
+            </a>
           </div>
           <svg
             id="Layer_1"
@@ -31,7 +43,7 @@ const ModalContact = ({ setShowModal }) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 147 147"
           >
-            <polygon class="cls-1" points="147 0 147 147 0 147 147 0" />
+            <polygon className="cls-1" points="147 0 147 147 0 147 147 0" />
           </svg>
         </div>
       </div>
