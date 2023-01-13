@@ -427,7 +427,7 @@ a {
   justify-content: center;
   border-left: 3px solid var(--ACCENT);
   padding-left: 1rem;
-  width: 40%;
+  width: 60%;
   animation: fadeIn 0.5s ease-in-out;
   height: 265px;
 }
@@ -445,7 +445,7 @@ a {
 }
 
 .work_desc p {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .technology_stack {
