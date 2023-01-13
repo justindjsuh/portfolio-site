@@ -33,7 +33,7 @@ const Sections = () => {
         setExperienceIsVisible={setExperienceIsVisible}
         setContactIsVisible={setContactIsVisible}
       />
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 };

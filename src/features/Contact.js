@@ -1,4 +1,13 @@
+import { useState } from "react";
+import ModalContact from "./ModalContact";
+
 const Contact = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleModalClick = () => {
+    setShowModal(true);
+  };
+
   return (
     <div className="contact_container">
       <div
@@ -24,9 +33,11 @@ const Contact = () => {
           questions or want to reach out with an opportunity, my inbox is always
           open, and I will respond as soon as I can.{" "}
         </p>
-        <button className="landing_btn">Contact Me</button>
+        <button onClick={handleModalClick} className="landing_btn">
+          Contact Me
+        </button>
       </div>
-      <span></span>
+      {showModal ? <ModalContact setShowModal={setShowModal} /> : null}
     </div>
   );
 };

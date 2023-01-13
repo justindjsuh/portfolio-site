@@ -1,6 +1,14 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import ModalContact from "./ModalContact";
 
 const Footer = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleModalClick = () => {
+    setShowModal(true);
+  };
+
   const handleClick = () => {
     // window.location.reload(true);
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -9,8 +17,8 @@ const Footer = () => {
     <div className="footer_container">
       <div className="footer_box">
         <div className="footer_link_container">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <button href="#about">About</button>
+          <button onClick={handleModalClick}>Contact</button>
         </div>
         <Link className="signature_img" to="/">
           <img
@@ -36,6 +44,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      {showModal ? <ModalContact setShowModal={setShowModal} /> : null}
     </div>
   );
 };

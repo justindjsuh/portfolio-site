@@ -29,14 +29,8 @@ const Landing = () => {
             I aspire to build beautiful things, both visually and functionally
             to enhance user experience. I specialize in the working in the PERN
             stack to bring concepts to life in a tangible way.
-          </p>
-          <p
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="2600"
-            className="ending_text"
-          >
-            And I love what I do.
+            <br></br>
+            <br></br>And I love what I do.
           </p>
           <hr />
         </div>

@@ -53,16 +53,18 @@ const About = (props) => {
           <div className="about_me">
             <p>Justin Suh</p>
             <hr />
-
             <p>
               I'm a fullstack web developer with a Bachelor’s in Cyber Security
               from Drexel University and a recent Fullstack Academy graduate. I
               fell in love with coding because I’m a problem solver at heart. I
               love figuring out intricacies of problem and spending hours on
-              solving them. Mixing the photography and tech together brought web
-              development into my horizon and has ever since become my passion.
-              The amount I have left to learn is a daunting task, but I hope to
-              have fun and create some awesome things on the way!
+              solving them.
+            </p>
+            <p>
+              Mixing the photography and tech together brought web development
+              into my horizon and has ever since become my passion. The amount I
+              have left to learn is a daunting task, but I hope to have fun and
+              create some awesome things on the way!
             </p>
           </div>
         </div>
