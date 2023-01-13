@@ -37,7 +37,7 @@ const Landing = () => {
           id="Layer_1"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 200.02 563"
+          viewBox="-20 0 220 563"
         >
           <polygon
             className="cls-2"
