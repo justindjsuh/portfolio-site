@@ -1,6 +1,6 @@
 import { useState } from "react";
 import About from "./About";
-import Contact from "./Contact";
+// import Contact from "./Contact";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import StickyHeader from "./StickyHeader";
