@@ -478,7 +478,7 @@ a {
   color: var(--OFFWHITE);
   display: flex;
   flex-flow: column;
-  min-height: 60vh;
+  min-height: 80vh;
   align-items: center;
   /* justify-content: center; */
 }
