@@ -243,7 +243,7 @@ a {
   color: var(--BGCOLOR);
   display: flex;
   flex-flow: column;
-  min-height: 85vh;
+  min-height: 100vh;
   align-items: center;
 }
 
