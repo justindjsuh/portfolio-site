@@ -14,30 +14,26 @@ const Landing = () => {
           <p
             data-aos="fade-up"
             data-aos-duration="1000"
-            data-aos-delay="2200"
+            data-aos-delay="3000"
             className="desc_header"
           >
             Hi there, I'm <span className="landing_name">Justin Suh.</span>
             <br></br>I'm a full-stack web developer.
           </p>
-          <p
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="2400"
-            className="landing_desc"
-          >
+          <p className="landing_desc">
             I aspire to build beautiful things, both visually and functionally
             to enhance user experience. I specialize in the working in the PERN
             stack to bring concepts to life in a tangible way.
             <br></br>
-            <br></br>And I love what I do.
+            <br></br>
+            <span className="ending_text">And I love what I do.</span>
           </p>
           <hr />
         </div>
         <svg
           data-aos="fade-left"
           data-aos-duration="1000"
-          data-aos-delay="3000"
+          data-aos-delay="2200"
           id="Layer_1"
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
