@@ -21,9 +21,9 @@ const Landing = () => {
             <br></br>I'm a full-stack web developer.
           </p>
           <p className="landing_desc">
-            I aspire to build beautiful things, both visually and functionally
-            to enhance user experience. I specialize in the working in the PERN
-            stack to bring concepts to life in a tangible way.
+            I aspire to build beautiful products, both visually and
+            functionally, to enhance user experience. I specialize in working
+            with the PERN stack to bring concepts to life in a tangible way.
             <br></br>
             <br></br>
             <span className="ending_text">And I love what I do.</span>
