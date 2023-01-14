@@ -138,7 +138,7 @@ const About = (props) => {
                 data-aos-delay="1800"
               >
                 <td>
-                  <span className="tech_divider">//</span> React
+                  <span className="tech_divider">//</span> Git
                 </td>
                 <td>
                   <span className="tech_divider">//</span> Axios
@@ -159,16 +159,16 @@ const About = (props) => {
                 data-aos-delay="2000"
               >
                 <td>
-                  <span className="tech_divider">//</span> Git
+                  <span className="tech_divider">//</span> RESTful API
                 </td>
                 <td>
-                  <span className="tech_divider">//</span> RESTful API
+                  <span className="tech_divider">//</span> Responsive Design
                 </td>
                 <td>
                   <span className="tech_divider">//</span> VS Code
                 </td>
                 <td>
-                  <span className="tech_divider">//</span> Responsive Design
+                  <span className="tech_divider">//</span> MongoDB
                 </td>
                 <td>
                   <span className="tech_divider">//</span> UX/UI
