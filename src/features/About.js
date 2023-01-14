@@ -56,16 +56,17 @@ const About = (props) => {
             <p>
               I'm a full-stack web developer with a B.S. in Cyber Security from
               Drexel University and a recent Fullstack Academy graduate. As a
-              problem solver at heart, I enjoyed the intricacies of the puzzles
-              software engineering provided.
+              problem solver at heart, I enjoyed solving the intricacies of the
+              puzzles software engineering provided.
             </p>
             <p>
               Creativity and technology have always been my two greatest joys in
               life. Mixing the two brought web development into my horizon and
-              has ever since become my passion. As someone who loves learning
-              new things, I can't wait to see where the path of software
-              engineering will lead me, but I hope to have fun and create some
-              awesome things on the way!
+              has since become my passion. As someone who loves learning new
+              things, I can't wait to see where the path of software engineering
+              will lead me! I'm not sure where I'll be in ten years, but I hope
+              to grow as person, have fun and create some awesome things on the
+              way!
             </p>
           </div>
         </div>
