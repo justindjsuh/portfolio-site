@@ -260,7 +260,7 @@ a {
 .about_header hr {
   border: 1px solid var(--ACCENT);
   margin: 0;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .about_content {
@@ -300,7 +300,7 @@ a {
   text-align: center;
   font-size: 36px;
   font-weight: 600;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .soft_skills_header hr {
@@ -338,7 +338,7 @@ a {
 .tech_skills_header {
   font-size: 36px;
   font-weight: 600;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .tech_skills_header hr {
