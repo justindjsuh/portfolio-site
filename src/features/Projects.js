@@ -41,8 +41,8 @@ const Projects = (props) => {
             <p className="project_description">
               Designed and implemented the website from scratch with a team of
               5, utilizing Next.js, Figma, Supabase (a Firebase alternative),
-              and MaterialUI to create a sleek and seamless experience for daily
-              usage for users.
+              and MaterialUI to create a sleek and seamless experience to help
+              users maintain a healthy habits and hit fitness goals.
             </p>
             <div className="technology_stack">
               <p>Next.js</p>
