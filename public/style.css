@@ -502,6 +502,7 @@ a {
   display: flex;
   flex-flow: column;
   gap: 4rem;
+  margin-bottom: 3rem;
 }
 
 .project_item {
