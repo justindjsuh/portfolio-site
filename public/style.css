@@ -458,7 +458,7 @@ a {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   color: var(--ACCENT);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -498,10 +498,24 @@ a {
   margin-bottom: 4rem;
 }
 
+.project_list {
+  display: flex;
+  flex-flow: column;
+  gap: 4rem;
+}
+
 .project_item {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project_item img {
+  width: 40%;
+  height: auto;
+  /* object-fit: cover; */
 }
 
 .project_title {

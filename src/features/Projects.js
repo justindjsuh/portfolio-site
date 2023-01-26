@@ -25,15 +25,58 @@ const Projects = (props) => {
         <p>PROJECTS</p>
         <hr />
       </div>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="1000"
-        data-aos-delay="400"
-        className="project_list"
-      >
-        <div className="project_item alibi_esports">
+      <div className="project_list">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+          className="project_item peak_performance"
+        >
+          <img src="../img/peak_landing.png" alt="peak website" />
+          <div className="project_details">
+            <p className="project_title">
+              Peak Website | Fullstack Software Developer (in progress)
+            </p>
+            <hr />
+            <p className="project_description">
+              Designed and implemented the website from scratch with a team of
+              5, utilizing Next.js, Figma, Supabase (a Firebase alternative),
+              and MaterialUI to create a sleek and seamless experience for daily
+              usage for users.
+            </p>
+            <div className="technology_stack">
+              <p>Next.js</p>
+              <p>MaterialUI</p>
+              <p>Supabase</p>
+              <p>Node.js</p>
+              <p>PostgreSQL</p>
+            </div>
+            <a
+              className="project_btn"
+              href="https://www.figma.com/file/zOEOEwVPwMwR01Dh6fGvs9/peak-performance?node-id=0%3A1&t=W9siTAKEKSdtWtzO-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Figma
+            </a>
+            <a
+              className="project_btn"
+              href="https://github.com/capstone-peak/peak"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+          className="project_item alibi_esports"
+        >
           <img
-            src="../img/alibiesport_project.png"
+            src="../img/alibiesports_project.png"
             alt="alibi esports website"
           />
           <div className="project_details">
