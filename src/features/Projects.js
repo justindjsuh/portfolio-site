@@ -30,6 +30,50 @@ const Projects = (props) => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="400"
+          className="project_item new_portfolio"
+        >
+          <img src="../img/portfolio_landing.png" alt="new portfolio website" />
+          <div className="project_details">
+            <p className="project_title">
+              New Portfolio Website! (work in progress)
+            </p>
+            <hr />
+            <p className="project_description">
+              I'm working on a cleaner and more seamless personal site that
+              works to not only properly display my skillset, but to give the
+              user a more pleasant user experience. I love improving my craft.
+              What better way to improve and reflect on how much I've learned
+              than enhancing a project I've worked on before?
+            </p>
+            <div className="technology_stack">
+              <p>Gatsby</p>
+              <p>React</p>
+              <p>GSAP</p>
+              <p>JavaScript</p>
+            </div>
+            <a
+              className="project_btn"
+              href="https://peak-capstone.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ pointerEvents: "none" }}
+            >
+              Under Construction
+            </a>
+            {/* <a
+              className="project_btn"
+              href="https://github.com/capstone-peak/peak"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a> */}
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
           className="project_item peak_performance"
         >
           <img src="../img/peak_landing.png" alt="peak website" />
@@ -39,7 +83,7 @@ const Projects = (props) => {
             </p>
             <hr />
             <p className="project_description">
-              Designed and implemented the website from scratch with a team of 5
+              Designing and implementing a website from scratch with a team of 5
               developers, utilizing Next.js, Figma, Supabase (a Firebase
               alternative), and MaterialUI to create a sleek and seamless
               experience to help users maintain a healthy habits and hit fitness
