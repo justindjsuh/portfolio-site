@@ -98,7 +98,7 @@ const Projects = (props) => {
             </div>
             <a
               className="project_btn"
-              href="https://peak-capstone.netlify.app/"
+              href="https://peakfitness.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
