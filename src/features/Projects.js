@@ -35,14 +35,15 @@ const Projects = (props) => {
           <img src="../img/peak_landing.png" alt="peak website" />
           <div className="project_details">
             <p className="project_title">
-              Peak Website | Fullstack Software Developer (in progress)
+              Peak Website | Fullstack Software Developer (work in progress)
             </p>
             <hr />
             <p className="project_description">
-              Designed and implemented the website from scratch with a team of
-              5, utilizing Next.js, Figma, Supabase (a Firebase alternative),
-              and MaterialUI to create a sleek and seamless experience to help
-              users maintain a healthy habits and hit fitness goals.
+              Designed and implemented the website from scratch with a team of 5
+              developers, utilizing Next.js, Figma, Supabase (a Firebase
+              alternative), and MaterialUI to create a sleek and seamless
+              experience to help users maintain a healthy habits and hit fitness
+              goals.
             </p>
             <div className="technology_stack">
               <p>Next.js</p>
@@ -53,11 +54,11 @@ const Projects = (props) => {
             </div>
             <a
               className="project_btn"
-              href="https://www.figma.com/file/zOEOEwVPwMwR01Dh6fGvs9/peak-performance?node-id=0%3A1&t=W9siTAKEKSdtWtzO-1"
+              href="https://peak-capstone.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Figma
+              Website
             </a>
             <a
               className="project_btn"
