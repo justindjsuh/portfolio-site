@@ -79,7 +79,7 @@ const Projects = (props) => {
           <img src="../img/peak_landing.png" alt="peak website" />
           <div className="project_details">
             <p className="project_title">
-              Peak Website | Fullstack Software Developer (work in progress)
+              Peak Website | Fullstack Software Developer
             </p>
             <hr />
             <p className="project_description">
@@ -106,7 +106,7 @@ const Projects = (props) => {
             </a>
             <a
               className="project_btn"
-              href="https://github.com/capstone-peak/peak"
+              href="https://github.com/peak-fitness/peak"
               target="_blank"
               rel="noopener noreferrer"
             >
