@@ -62,9 +62,9 @@
 
 ## Lessons Learned
 <p>
-Creating a personal website was one of the goals I always wanted to accomplish, but never thought I'd achieve. Even when I wasn't in web development, I wanted to create a personal portfolio filled with creative ideas. I will say that my creativity was heavily limited by my knowledge of libraries and stuck mainly with the classic JavaScript, CSS and HTML. But this was only more motivation for me to get even better at these tools and add more to my skillset so I can make something that I can satisfy my creative side. But anyway, onto the tech!
+Creating a personal website was one of the goals I always wanted to accomplish, but never thought I'd achieve. Even when I wasn't in web development, I wanted to create a personal portfolio filled with creative ideas. I will say that my creativity was heavily limited by my knowledge of libraries and stuck mainly with the classic JavaScript, CSS and HTML. But this was only more motivation for me to get even better at these tools and add more to my skillset so I can make something that I can satisfy my creative side.
 </p>
 <p>
-Probably noticed, but I hardly used anything other than the bare bones for web development. This brought some challenges that required me to dive deeper into these tools than I had ever done before. I don't regret sticking to the fundamentals. I think that this provided me a great opportunity to get my foundation even more concrete than it was before.
+Probably noticed, but I hardly used anything other than the bare bones for web development. This brought some challenges that required me to dive deeper into these tools than I had ever done before. I don't regret sticking to the fundamentals. I think that this provided me a great opportunity to get my foundation even more concrete than it was before. I would love to (and plan to) learn libraries like GSAP, three.js, and anime.js to really make my portfolio pop the next time I do a revamp for it!
 </p>
 
