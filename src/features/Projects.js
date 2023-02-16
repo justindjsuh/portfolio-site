@@ -83,11 +83,11 @@ const Projects = (props) => {
             </p>
             <hr />
             <p className="project_description">
-              Designing and implementing a website from scratch with a team of 5
+              Designed and implemented a website from scratch with a team of 5
               developers, utilizing Next.js, Figma, Supabase (a Firebase
               alternative), and MaterialUI to create a sleek and seamless
-              experience to help users maintain a healthy habits and hit fitness
-              goals.
+              experience to help users maintain healthy habits and hit their
+              fitness goals.
             </p>
             <div className="technology_stack">
               <p>Next.js</p>
