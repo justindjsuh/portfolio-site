@@ -22,7 +22,7 @@ This website is my personal portfolio where I can not only demonstrate my skills
 ## Demo
 
 <p align="center">
-    <img src="./screnshots/landing-page.gif" width="738" />
+    <img src="./screenshots/landing-page.gif" width="738" />
 </p>
 
 
