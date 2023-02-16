@@ -7,10 +7,11 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
-[Features](#features) •
-[Screenshots](#screenshots) •
+[Purpose](#purpose) •
+[Demo](#demo) •
 [Tech Stack](#tech-stack) •
-[Packages](#packages)
+[Packages](#packages) •
+[Lessons Learned](#lessons-learned)
 
 </div>
 
@@ -21,7 +22,7 @@ This website is my personal portfolio where I can not only demonstrate my skills
 ## Demo
 
 <p align="center">
-    <img src="/screnshots/landing-gif.gif" width="738" />
+    <img src="/screnshots/landing-page.gif" width="738" />
 </p>
 
 
